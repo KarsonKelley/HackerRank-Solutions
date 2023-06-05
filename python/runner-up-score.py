@@ -1,5 +1,5 @@
 n = 5
-a, b, c, d, e = 5, 3, 6, 2, 2 #sample inputs
+a, b, c, d, e = 5, 7, 6, 2, 2 #sample inputs
 arr = [a,b,c,d,e]
 
 arr.sort()
