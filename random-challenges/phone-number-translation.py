@@ -8,7 +8,10 @@ digits_mapping = {
     "6": "Six",
     "7": "Seven",
     "8": "Eight",
-    "9": "Nine"
+    "9": "Nine",
+    "0": "Zero"
 }
+output = ""
 for count in phone:
-    print(digits_mapping[count], end=' ')
+    output += digits_mapping.get(count, "!") + ' '
+print(output)
