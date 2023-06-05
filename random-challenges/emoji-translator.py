@@ -6,8 +6,5 @@ emojis = {
 }
 output = ''
 for str in message:
-    if str == ":)" or str == ":(":
-        output += emojis[str] + ' '
-    else:
-        output += str + ' '
+    output += emojis.get(str, str) + ' '
 print(output)
