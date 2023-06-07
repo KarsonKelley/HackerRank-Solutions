@@ -11,9 +11,8 @@ names = []
 for entry in records:
     grades.append(entry[1])
 grades.sort()
-min_grade = grades[0]
 for value in grades:
-    if value != min(grades) and value > min_grade:
+    if value != min(grades):
         min_grade = value
         break
 for entry in records:
